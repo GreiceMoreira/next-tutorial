@@ -1,4 +1,4 @@
-import CardWrapper, { Card } from "../../ui/dashboard/cards";
+import CardWrapper from "../../ui/dashboard/cards";
 import RevenueChart from "../../ui/dashboard/revenue-chart";
 import LatestInvoices from "../../ui/dashboard/latest-invoices";
 import { lusitana } from "../../ui/fonts";
@@ -8,7 +8,7 @@ import { RevenueChartSkeleton , LatestInvoicesSkeleton } from '@/app/ui/skeleton
 
 
 export default async function Page() {
-  const {numberOfCustomers, numberOfInvoices , totalPaidInvoices , totalPendingInvoices} = await fetchCardData();
+  // const {numberOfCustomers, numberOfInvoices , totalPaidInvoices , totalPendingInvoices} = await fetchCardData();
   
   return <main>
       <h1 className={`${lusitana.className} mb-4 text-xl md:text-2xl`}>
